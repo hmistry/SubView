@@ -16,6 +16,10 @@
 		863939981A84528E004706EB /* SubViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939971A84528E004706EB /* SubViewTests.m */; };
 		863939A31A845C4C004706EB /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939A21A845C4C004706EB /* Square.m */; };
 		863939A51A845C62004706EB /* Square.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863939A41A845C62004706EB /* Square.xib */; };
+		863939A71A85C86A004706EB /* FormA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863939A61A85C86A004706EB /* FormA.xib */; };
+		863939AA1A85C87C004706EB /* FormA.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939A91A85C87C004706EB /* FormA.m */; };
+		863939AD1A85CBE8004706EB /* FormB.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939AC1A85CBE8004706EB /* FormB.m */; };
+		863939AF1A85CBF5004706EB /* FormB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863939AE1A85CBF5004706EB /* FormB.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,12 @@
 		863939A11A845C4C004706EB /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
 		863939A21A845C4C004706EB /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 		863939A41A845C62004706EB /* Square.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Square.xib; sourceTree = "<group>"; };
+		863939A61A85C86A004706EB /* FormA.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormA.xib; sourceTree = "<group>"; };
+		863939A81A85C87C004706EB /* FormA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormA.h; sourceTree = "<group>"; };
+		863939A91A85C87C004706EB /* FormA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormA.m; sourceTree = "<group>"; };
+		863939AB1A85CBE8004706EB /* FormB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormB.h; sourceTree = "<group>"; };
+		863939AC1A85CBE8004706EB /* FormB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormB.m; sourceTree = "<group>"; };
+		863939AE1A85CBF5004706EB /* FormB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormB.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,12 @@
 				863939801A84528E004706EB /* AppDelegate.m */,
 				863939821A84528E004706EB /* ViewController.h */,
 				863939831A84528E004706EB /* ViewController.m */,
+				863939A81A85C87C004706EB /* FormA.h */,
+				863939A91A85C87C004706EB /* FormA.m */,
+				863939A61A85C86A004706EB /* FormA.xib */,
+				863939AB1A85CBE8004706EB /* FormB.h */,
+				863939AC1A85CBE8004706EB /* FormB.m */,
+				863939AE1A85CBF5004706EB /* FormB.xib */,
 				863939A11A845C4C004706EB /* Square.h */,
 				863939A21A845C4C004706EB /* Square.m */,
 				863939A41A845C62004706EB /* Square.xib */,
@@ -211,6 +227,8 @@
 				8639398C1A84528E004706EB /* LaunchScreen.xib in Resources */,
 				863939891A84528E004706EB /* Images.xcassets in Resources */,
 				863939A51A845C62004706EB /* Square.xib in Resources */,
+				863939AF1A85CBF5004706EB /* FormB.xib in Resources */,
+				863939A71A85C86A004706EB /* FormA.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863939AD1A85CBE8004706EB /* FormB.m in Sources */,
 				863939841A84528E004706EB /* ViewController.m in Sources */,
+				863939AA1A85C87C004706EB /* FormA.m in Sources */,
 				863939811A84528E004706EB /* AppDelegate.m in Sources */,
 				8639397E1A84528E004706EB /* main.m in Sources */,
 				863939A31A845C4C004706EB /* Square.m in Sources */,

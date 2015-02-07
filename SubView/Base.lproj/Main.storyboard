@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -23,12 +24,32 @@
                                     <constraint firstAttribute="height" constant="100" id="xUV-cz-WFT"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQA-i5-gZo" customClass="FormA">
+                                <rect key="frame" x="150" y="150" width="300" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4c9-ul-VUf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0V-HH-y71" customClass="FormB">
+                                <rect key="frame" x="150" y="270" width="300" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ZNN-6P-Ve1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.97199074074074077" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="AQA-i5-gZo" secondAttribute="trailing" constant="134" id="77k-PP-4nk"/>
                             <constraint firstItem="AyV-Dg-h3g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="8Q0-op-pG7"/>
                             <constraint firstItem="AyV-Dg-h3g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="234" id="JmR-i2-xCq"/>
+                            <constraint firstItem="AQA-i5-gZo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="134" id="WfF-g7-1ua"/>
+                            <constraint firstItem="j0V-HH-y71" firstAttribute="top" secondItem="AQA-i5-gZo" secondAttribute="bottom" constant="20" id="b5A-Lj-Yqv"/>
+                            <constraint firstItem="j0V-HH-y71" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="134" id="bgL-8o-4A7"/>
                             <constraint firstAttribute="trailing" secondItem="AyV-Dg-h3g" secondAttribute="trailing" constant="234" id="tbE-r0-1Oa"/>
+                            <constraint firstItem="AQA-i5-gZo" firstAttribute="top" secondItem="AyV-Dg-h3g" secondAttribute="bottom" constant="20" id="tea-41-HBq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j0V-HH-y71" secondAttribute="trailing" constant="134" id="zJs-SC-GrG"/>
                         </constraints>
                     </view>
                     <connections>
