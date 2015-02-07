@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "Square.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet Square *sq;
 @end
 
 @implementation ViewController
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.sq.contentView setNeedsLayout];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+    [self.sq.contentView setNeedsLayout];
+}
 @end

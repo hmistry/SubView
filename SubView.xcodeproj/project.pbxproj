@@ -14,6 +14,8 @@
 		863939891A84528E004706EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863939881A84528E004706EB /* Images.xcassets */; };
 		8639398C1A84528E004706EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8639398A1A84528E004706EB /* LaunchScreen.xib */; };
 		863939981A84528E004706EB /* SubViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939971A84528E004706EB /* SubViewTests.m */; };
+		863939A31A845C4C004706EB /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939A21A845C4C004706EB /* Square.m */; };
+		863939A51A845C62004706EB /* Square.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863939A41A845C62004706EB /* Square.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		863939911A84528E004706EB /* SubViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		863939961A84528E004706EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		863939971A84528E004706EB /* SubViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubViewTests.m; sourceTree = "<group>"; };
+		863939A11A845C4C004706EB /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		863939A21A845C4C004706EB /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		863939A41A845C62004706EB /* Square.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Square.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,9 @@
 				863939801A84528E004706EB /* AppDelegate.m */,
 				863939821A84528E004706EB /* ViewController.h */,
 				863939831A84528E004706EB /* ViewController.m */,
+				863939A11A845C4C004706EB /* Square.h */,
+				863939A21A845C4C004706EB /* Square.m */,
+				863939A41A845C62004706EB /* Square.xib */,
 				863939851A84528E004706EB /* Main.storyboard */,
 				863939881A84528E004706EB /* Images.xcassets */,
 				8639398A1A84528E004706EB /* LaunchScreen.xib */,
@@ -202,6 +210,7 @@
 				863939871A84528E004706EB /* Main.storyboard in Resources */,
 				8639398C1A84528E004706EB /* LaunchScreen.xib in Resources */,
 				863939891A84528E004706EB /* Images.xcassets in Resources */,
+				863939A51A845C62004706EB /* Square.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 				863939841A84528E004706EB /* ViewController.m in Sources */,
 				863939811A84528E004706EB /* AppDelegate.m in Sources */,
 				8639397E1A84528E004706EB /* main.m in Sources */,
+				863939A31A845C4C004706EB /* Square.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +355,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = SubView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SubView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
