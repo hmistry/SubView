@@ -20,6 +20,9 @@
 		863939AA1A85C87C004706EB /* FormA.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939A91A85C87C004706EB /* FormA.m */; };
 		863939AD1A85CBE8004706EB /* FormB.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939AC1A85CBE8004706EB /* FormB.m */; };
 		863939AF1A85CBF5004706EB /* FormB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863939AE1A85CBF5004706EB /* FormB.xib */; };
+		863939B41A85D433004706EB /* CMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939B31A85D433004706EB /* CMTextField.m */; };
+		863939B71A85D4CF004706EB /* FormC.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939B61A85D4CF004706EB /* FormC.m */; };
+		863939B91A85D4DE004706EB /* FormC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863939B81A85D4DE004706EB /* FormC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,11 @@
 		863939AB1A85CBE8004706EB /* FormB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormB.h; sourceTree = "<group>"; };
 		863939AC1A85CBE8004706EB /* FormB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormB.m; sourceTree = "<group>"; };
 		863939AE1A85CBF5004706EB /* FormB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormB.xib; sourceTree = "<group>"; };
+		863939B21A85D433004706EB /* CMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTextField.h; sourceTree = "<group>"; };
+		863939B31A85D433004706EB /* CMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTextField.m; sourceTree = "<group>"; };
+		863939B51A85D4CF004706EB /* FormC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormC.h; sourceTree = "<group>"; };
+		863939B61A85D4CF004706EB /* FormC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormC.m; sourceTree = "<group>"; };
+		863939B81A85D4DE004706EB /* FormC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,11 @@
 				863939AB1A85CBE8004706EB /* FormB.h */,
 				863939AC1A85CBE8004706EB /* FormB.m */,
 				863939AE1A85CBF5004706EB /* FormB.xib */,
+				863939B21A85D433004706EB /* CMTextField.h */,
+				863939B31A85D433004706EB /* CMTextField.m */,
+				863939B51A85D4CF004706EB /* FormC.h */,
+				863939B61A85D4CF004706EB /* FormC.m */,
+				863939B81A85D4DE004706EB /* FormC.xib */,
 				863939A11A845C4C004706EB /* Square.h */,
 				863939A21A845C4C004706EB /* Square.m */,
 				863939A41A845C62004706EB /* Square.xib */,
@@ -229,6 +242,7 @@
 				863939A51A845C62004706EB /* Square.xib in Resources */,
 				863939AF1A85CBF5004706EB /* FormB.xib in Resources */,
 				863939A71A85C86A004706EB /* FormA.xib in Resources */,
+				863939B91A85D4DE004706EB /* FormC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				863939AD1A85CBE8004706EB /* FormB.m in Sources */,
+				863939B71A85D4CF004706EB /* FormC.m in Sources */,
 				863939841A84528E004706EB /* ViewController.m in Sources */,
+				863939B41A85D433004706EB /* CMTextField.m in Sources */,
 				863939AA1A85C87C004706EB /* FormA.m in Sources */,
 				863939811A84528E004706EB /* AppDelegate.m in Sources */,
 				8639397E1A84528E004706EB /* main.m in Sources */,
@@ -447,6 +463,7 @@
 				8639399D1A84528E004706EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8639399E1A84528E004706EB /* Build configuration list for PBXNativeTarget "SubViewTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +472,7 @@
 				863939A01A84528E004706EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormC">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="BEn-7d-zQj"/>
+                <outlet property="midnight" destination="Aki-XT-pd1" id="J5T-ZE-BI4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Midnight:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P25-6l-Odv">
+                    <rect key="frame" x="20" y="30" width="72" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What's for midnight snack?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aki-XT-pd1" customClass="CMTextField">
+                    <rect key="frame" x="112" y="27" width="180" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="LM2-1n-npb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Aki-XT-pd1" firstAttribute="baseline" secondItem="P25-6l-Odv" secondAttribute="baseline" id="4H2-oa-F0b"/>
+                <constraint firstItem="P25-6l-Odv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="BA3-Qp-hSI"/>
+                <constraint firstItem="P25-6l-Odv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="ZC0-4f-PHf"/>
+                <constraint firstItem="Aki-XT-pd1" firstAttribute="leading" secondItem="P25-6l-Odv" secondAttribute="trailing" constant="20" id="faJ-vw-ufd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
