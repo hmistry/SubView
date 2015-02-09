@@ -43,6 +43,9 @@
     }
 }
 
+
+// How to get drawRect to redraw the square and line after device rotation?
+
 - (void) drawRect:(CGRect)rect {
     NSLog(@"%s", __PRETTY_FUNCTION__);
     NSLog(@"SquareView bounds, origin (%f,%f), size (%f,%f)", self.contentView.bounds.origin.x, self.contentView.bounds.origin.y, self.contentView.bounds.size.width, self.contentView.bounds.size.height);
@@ -67,6 +70,9 @@
     [shape stroke];
 
 }
+
+
+// How to get drawBorderTop to use the final frame/bounds of the UIView after AutoLayout and not whats in IB?
 
 - (void) drawBorderTop:(CGFloat)stroke color:(UIColor *)color {
     NSLog(@"%s", __PRETTY_FUNCTION__);
