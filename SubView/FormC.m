@@ -8,10 +8,12 @@
 
 #import "FormC.h"
 #import "CMTextField.h"
+#import "CMTextView.h"
 
 
 @interface FormC() <UITextFieldDelegate, UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet CMTextField *midnight;
+@property (weak, nonatomic) IBOutlet CMTextView *recipe;
 @end
 
 @implementation FormC
@@ -46,6 +48,7 @@
         self.contentView.frame = self.bounds;
         
         self.midnight.delegate = self;
+        self.recipe.delegate = self;
     }
 }
 

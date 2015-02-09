@@ -7,12 +7,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormC">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="BEn-7d-zQj"/>
-                <outlet property="midnight" destination="Aki-XT-pd1" id="J5T-ZE-BI4"/>
+                <outlet property="midnight" destination="Aki-XT-pd1" id="0Ys-eu-d24"/>
+                <outlet property="recipe" destination="Dsg-Op-H2h" id="dsv-gd-jDK"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Midnight:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P25-6l-Odv">
@@ -29,13 +30,34 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsg-Op-H2h" customClass="CMTextView">
+                    <rect key="frame" x="112" y="80" width="180" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="BS1-os-cxA"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hu2-lt-PqG">
+                    <rect key="frame" x="20" y="88" width="59" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Aki-XT-pd1" firstAttribute="baseline" secondItem="P25-6l-Odv" secondAttribute="baseline" id="4H2-oa-F0b"/>
+                <constraint firstItem="Hu2-lt-PqG" firstAttribute="top" secondItem="P25-6l-Odv" secondAttribute="bottom" constant="37" id="6u6-nA-Lg9"/>
                 <constraint firstItem="P25-6l-Odv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="BA3-Qp-hSI"/>
+                <constraint firstItem="P25-6l-Odv" firstAttribute="leading" secondItem="Hu2-lt-PqG" secondAttribute="leading" id="FSS-5l-dgK"/>
+                <constraint firstItem="Dsg-Op-H2h" firstAttribute="top" secondItem="Hu2-lt-PqG" secondAttribute="top" constant="-8" id="T4a-Pj-uKv"/>
+                <constraint firstItem="Dsg-Op-H2h" firstAttribute="leading" secondItem="Aki-XT-pd1" secondAttribute="leading" id="Wap-TF-BAy"/>
                 <constraint firstItem="P25-6l-Odv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="ZC0-4f-PHf"/>
                 <constraint firstItem="Aki-XT-pd1" firstAttribute="leading" secondItem="P25-6l-Odv" secondAttribute="trailing" constant="20" id="faJ-vw-ufd"/>
+                <constraint firstItem="Dsg-Op-H2h" firstAttribute="width" secondItem="Aki-XT-pd1" secondAttribute="width" id="t8j-kA-fgJ"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

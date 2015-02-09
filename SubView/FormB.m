@@ -10,6 +10,7 @@
 
 @interface FormB() <UITextFieldDelegate, UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *dinner;
+@property (weak, nonatomic) IBOutlet UITextView *recipe;
 @end
 
 @implementation FormB
@@ -44,6 +45,7 @@
         self.contentView.frame = self.bounds;
         
         self.dinner.delegate = self;
+        self.recipe.delegate = self;
     }
 }
 

@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="xur-4z-8b8"/>
                 <outlet property="dinner" destination="iZv-mX-Vuh" id="eWh-78-MbE"/>
+                <outlet property="recipe" destination="hbc-cX-O5C" id="8p0-xc-w4r"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

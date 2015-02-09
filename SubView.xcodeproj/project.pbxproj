@@ -23,6 +23,7 @@
 		863939B41A85D433004706EB /* CMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939B31A85D433004706EB /* CMTextField.m */; };
 		863939B71A85D4CF004706EB /* FormC.m in Sources */ = {isa = PBXBuildFile; fileRef = 863939B61A85D4CF004706EB /* FormC.m */; };
 		863939B91A85D4DE004706EB /* FormC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 863939B81A85D4DE004706EB /* FormC.xib */; };
+		86E111F01A88501F006CD48D /* CMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E111EF1A88501F006CD48D /* CMTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		863939B51A85D4CF004706EB /* FormC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormC.h; sourceTree = "<group>"; };
 		863939B61A85D4CF004706EB /* FormC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormC.m; sourceTree = "<group>"; };
 		863939B81A85D4DE004706EB /* FormC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormC.xib; sourceTree = "<group>"; };
+		86E111EE1A88501F006CD48D /* CMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTextView.h; sourceTree = "<group>"; };
+		86E111EF1A88501F006CD48D /* CMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				863939AE1A85CBF5004706EB /* FormB.xib */,
 				863939B21A85D433004706EB /* CMTextField.h */,
 				863939B31A85D433004706EB /* CMTextField.m */,
+				86E111EE1A88501F006CD48D /* CMTextView.h */,
+				86E111EF1A88501F006CD48D /* CMTextView.m */,
 				863939B51A85D4CF004706EB /* FormC.h */,
 				863939B61A85D4CF004706EB /* FormC.m */,
 				863939B81A85D4DE004706EB /* FormC.xib */,
@@ -263,6 +268,7 @@
 				863939AD1A85CBE8004706EB /* FormB.m in Sources */,
 				863939B71A85D4CF004706EB /* FormC.m in Sources */,
 				863939841A84528E004706EB /* ViewController.m in Sources */,
+				86E111F01A88501F006CD48D /* CMTextView.m in Sources */,
 				863939B41A85D433004706EB /* CMTextField.m in Sources */,
 				863939AA1A85C87C004706EB /* FormA.m in Sources */,
 				863939811A84528E004706EB /* AppDelegate.m in Sources */,
