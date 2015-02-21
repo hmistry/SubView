@@ -8,6 +8,10 @@
 
 #import "Square.h"
 
+@interface Square()
+@property (strong, nonatomic) CALayer *border;
+@end
+
 @implementation Square
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -36,15 +40,17 @@
     if (self.subviews.count == 0) {
         [[NSBundle mainBundle] loadNibNamed:@"Square" owner:self options:nil];
         [self addSubview: self.contentView];
+//        self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
         self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         self.contentView.frame = self.bounds;
-        
-        [self drawBorderTop:4.0f color:[UIColor greenColor]];
+        self.border = [CALayer layer];
+        [self.contentView.layer addSublayer:self.border];
     }
 }
 
 
 // How to get drawRect to redraw the square and line after device rotation?
+// Answer is calling setNeedsDisplay in layoutSubviews method
 
 - (void) drawRect:(CGRect)rect {
     NSLog(@"%s", __PRETTY_FUNCTION__);
@@ -73,18 +79,25 @@
 
 
 // How to get drawBorderTop to use the final frame/bounds of the UIView after AutoLayout and not whats in IB?
+// Answer is overriding layoutSubviews method and calling method in there
 
 - (void) drawBorderTop:(CGFloat)stroke color:(UIColor *)color {
     NSLog(@"%s", __PRETTY_FUNCTION__);
     NSLog(@"SquareView bounds, origin (%f,%f), size (%f,%f)", self.contentView.bounds.origin.x, self.contentView.bounds.origin.y, self.contentView.bounds.size.width, self.contentView.bounds.size.height);
 
-    CALayer *border = [CALayer layer];
-    border.frame = CGRectMake(self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, stroke);
-    border.backgroundColor = color.CGColor;
-    border.name = @"borderTop";
+    self.border.frame = CGRectMake(self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, stroke);
+    self.border.backgroundColor = color.CGColor;
+    self.border.name = @"borderTop";
 
-    [self.contentView.layer addSublayer:border];
+    NSLog(@"SubLayers %lu",(unsigned long)self.contentView.layer.sublayers.count);
 }
 
+- (void) layoutSubviews {
+    [super layoutSubviews];
+    
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+    [self setNeedsDisplay];
+    [self drawBorderTop:4.0f color:[UIColor greenColor]];
+}
 
 @end

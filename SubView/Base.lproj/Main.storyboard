@@ -22,6 +22,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="xUV-cz-WFT"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.97199074074074077" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,6 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="361" y="232"/>
         </scene>
     </scenes>
 </document>
